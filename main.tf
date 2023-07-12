@@ -9,7 +9,7 @@ terraform{
     encrypt = false
     bucket = "tf-state1111"
     dynamodb_table = "tf-state-lock-dynamo"
-    key = "state_fles/"
+    key = "state_files/"
     region = "us-east-2"
   }
 }
