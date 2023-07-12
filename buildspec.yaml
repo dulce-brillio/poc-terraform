@@ -7,13 +7,11 @@ phases:
       - "wget https://releases.hashicorp.com/terraform/1.5.3/terraform_1.5.3_linux_amd64.zip"
       - "unzip terraform_1.5.3_linux_amd64.zip"
       - "mv terraform /usr/local/bin"
-  initialize:
+  pre_build:
     commands:
       - terraform init
-  plan:
-    commands:
       - terraform plan
-  apply:
+  build:
     commands:
       - terraform apply -auto-approve
   post_build:
