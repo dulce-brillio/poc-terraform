@@ -1,4 +1,4 @@
-provider {
+provider "aws"{
   region = "us-east-2"
   secret_key = ""
   access_key = ""
