@@ -2,6 +2,9 @@ provider "aws"{
   region = "us-east-2"
   #secret_key = ""
   #access_key = ""
+  assume_role {
+    role_arn    = "arn:aws:iam::019994827807:role/service-role/codebuild-terraform-build-service-role"
+  }
 }
 
 terraform{
